@@ -7,7 +7,7 @@ function esTriangulo(num1, num2, num3){
     }else{
         resultado = false;
     }
-    alert(`el resultado es: ${resultado2}`);
+    alert(`el resultado es: ${resultado}`);
 }
 let n1 = prompt ("escriba la medida del primer lado del triangulo: ");
 Number(n1);

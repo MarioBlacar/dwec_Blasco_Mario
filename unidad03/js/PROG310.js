@@ -3,8 +3,10 @@ function replaceWithPosition(str){
     let resultado="";
     for ( let char of str ) {
         char.toLowerCase();
+        if("abcdefghijklmnopqrtsuvwxyz".includes(char)){
         resultado += parseInt(char,36) - 9;
         resultado += " ";
+        }
     }
     return(resultado);
 }

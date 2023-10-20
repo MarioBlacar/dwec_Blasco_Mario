@@ -1,13 +1,13 @@
-let cadena = prompt ("escriba la sentencia por la cual desea saber el numero de letras existentes: ");
+let cadena = prompt(
+  "escriba la sentencia por la cual desea saber el numero de letras existentes: "
+);
 
-function countLetters(str){
-    let resultado=0;
-    for ( let char of str ) {
-        if(char != " "){
-            resultado++;
-        }
-    }
-    return(resultado);
+function countLetters(str) {
+  let letterCount = {};
+  for (let char of str) {
+    letterCount[char] = char in letterCount ? letterCount[char] + 1 : 1;
+  }
+  return letterCount;
 }
 
-alert( countLetters(cadena) );
+console.log(countLetters(cadena));

@@ -1,9 +1,13 @@
 let nombres = ["Mario", "Blanca", "Paco", "Victor"];
+let nombres2 = ["Mario", "Paco"];
 
-function sendMessage(arr){
-    resultado = arr.forEach(element => {
-        return(`Hola, ${element}, bienvenido al curso de DWEC`);
+function isEqualArr(arr1, arr2){
+    resultado = true;
+    arr1.forEach(element => {
+        if(!arr2.some(element)){
+            resultado =  false;
+        }
     });
-
+    return resultado;
 }
-alert( sendMessage(nombres) );
+alert( isEqualArr(nombres, nombres2) );

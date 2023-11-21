@@ -93,7 +93,7 @@ document.getElementById("pages").innerHTML = `<span class="first">Primera</span>
     <span class="prev">Anterior</span>
     <span>Pagina ${currentPage + 1} de ${paginasTotales || 1}</span>
     <span class="next">Siguiente</span>
-    <span class="last">Última</span>`
+    <span class="last">Última</span>`;
 
 // Agregar eventos de clic a los botones de paginación.
 document.querySelector("#pages .first").addEventListener('click', () => {
